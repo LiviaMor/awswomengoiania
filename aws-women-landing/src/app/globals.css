@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+:root {
+  --aws-orange: #ff9900;
+  --aws-dark: #232f3e;
+  --aws-navy: #1a1a2e;
+  --neon-purple: #a855f7;
+  --neon-pink: #ec4899;
+  --neon-cyan: #06b6d4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0f;
+  color: #ffffff;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Animated gradient background */
+.gradient-bg {
+  background: linear-gradient(
+    135deg,
+    #0a0a0f 0%,
+    #1a1a2e 25%,
+    #16213e 50%,
+    #0f3460 75%,
+    #0a0a0f 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glowing text */
+.glow-text {
+  text-shadow:
+    0 0 10px rgba(255, 153, 0, 0.5),
+    0 0 20px rgba(255, 153, 0, 0.3),
+    0 0 40px rgba(255, 153, 0, 0.1);
+}
+
+.glow-text-purple {
+  text-shadow:
+    0 0 10px rgba(168, 85, 247, 0.5),
+    0 0 20px rgba(168, 85, 247, 0.3),
+    0 0 40px rgba(168, 85, 247, 0.1);
+}
+
+/* Floating particles */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Grid pattern overlay */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 153, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 153, 0, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Card hover effects */
+.card-futuristic {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-futuristic:hover {
+  border-color: rgba(255, 153, 0, 0.5);
+  box-shadow:
+    0 0 20px rgba(255, 153, 0, 0.15),
+    0 0 40px rgba(255, 153, 0, 0.05),
+    inset 0 0 20px rgba(255, 153, 0, 0.05);
+  transform: translateY(-5px);
+}
+
+/* Pulse animation */
+.pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 20px rgba(255, 153, 0, 0.5),
+      0 0 40px rgba(255, 153, 0, 0.2);
+  }
+}
+
+/* Scan line effect */
+.scanline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 153, 0, 0.4),
+    transparent
+  );
+  animation: scanline 4s linear infinite;
+}
+
+@keyframes scanline {
+  0% { top: 0; }
+  100% { top: 100%; }
+}
+
+/* Neon border */
+.neon-border {
+  position: relative;
+}
+
+.neon-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    #ff9900,
+    #a855f7,
+    #ec4899,
+    #06b6d4,
+    #ff9900
+  );
+  background-size: 300% 300%;
+  animation: neonRotate 4s linear infinite;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.neon-border:hover::before {
+  opacity: 1;
+}
+
+@keyframes neonRotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Typewriter cursor */
+.typewriter-cursor::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+  color: #ff9900;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff9900, #a855f7);
+  border-radius: 3px;
+}
