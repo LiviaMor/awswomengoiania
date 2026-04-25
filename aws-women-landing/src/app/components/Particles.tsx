@@ -15,19 +15,21 @@ export default function Particles() {
   const [particles, setParticles] = useState<Particle[]>([]);
 
   useEffect(() => {
+    // Apenas cores da paleta AWS — laranja e variações de azul
     const colors = [
-      "rgba(255, 153, 0, 0.3)",
-      "rgba(168, 85, 247, 0.3)",
-      "rgba(236, 72, 153, 0.2)",
-      "rgba(6, 182, 212, 0.2)",
+      "rgba(255, 153, 0, 0.35)",
+      "rgba(255, 153, 0, 0.2)",
+      "rgba(255, 184, 77, 0.25)",
+      "rgba(141, 163, 184, 0.15)",
+      "rgba(45, 63, 85, 0.5)",
     ];
 
-    const generated: Particle[] = Array.from({ length: 30 }, (_, i) => ({
+    const generated: Particle[] = Array.from({ length: 25 }, (_, i) => ({
       id: i,
       left: `${Math.random() * 100}%`,
-      size: Math.random() * 4 + 1,
-      duration: Math.random() * 15 + 10,
-      delay: Math.random() * 10,
+      size: Math.random() * 3 + 1,
+      duration: Math.random() * 18 + 12,
+      delay: Math.random() * 12,
       color: colors[Math.floor(Math.random() * colors.length)],
     }));
 
