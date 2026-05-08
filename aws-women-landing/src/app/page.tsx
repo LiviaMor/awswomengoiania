@@ -85,9 +85,14 @@ export default function Home() {
               />
             </a>
             <p className="text-center mt-3">
-              <span className="text-[#ff9900] text-xs font-semibold hover:underline cursor-pointer">
+              <a
+                href="https://www.meetup.com/aws-women-user-group-goiania/events/314560526/?eventOrigin=group_upcoming_events"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#ff9900] text-xs font-semibold hover:underline"
+              >
                 Inscreva-se →
-              </span>
+              </a>
             </p>
           </div>
 
