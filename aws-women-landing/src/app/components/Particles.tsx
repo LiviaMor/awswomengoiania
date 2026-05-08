@@ -16,19 +16,17 @@ export default function Particles() {
 
   useEffect(() => {
     const colors = [
-      "rgba(255, 153, 0, 0.25)",
-      "rgba(168, 85, 247, 0.2)",
-      "rgba(236, 72, 153, 0.15)",
-      "rgba(6, 182, 212, 0.15)",
-      "rgba(255, 255, 255, 0.08)",
+      "rgba(255, 153, 0, 0.15)",
+      "rgba(130, 80, 223, 0.12)",
+      "rgba(255, 255, 255, 0.04)",
     ];
 
-    const generated: Particle[] = Array.from({ length: 20 }, (_, i) => ({
+    const generated: Particle[] = Array.from({ length: 14 }, (_, i) => ({
       id: i,
       left: `${Math.random() * 100}%`,
-      size: Math.random() * 3 + 1,
-      duration: Math.random() * 20 + 15,
-      delay: Math.random() * 15,
+      size: Math.random() * 2.5 + 0.5,
+      duration: Math.random() * 25 + 18,
+      delay: Math.random() * 20,
       color: colors[Math.floor(Math.random() * colors.length)],
     }));
 
