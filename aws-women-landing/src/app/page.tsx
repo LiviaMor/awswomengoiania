@@ -62,7 +62,7 @@ export default function Home() {
           </p>
 
           {/* Próximo Evento */}
-          <div className="w-full mb-12">
+          <div className="w-full mb-16">
             <h2 className="text-sm font-bold text-gray-300 uppercase tracking-widest text-center mb-4">
               Próximo Evento
             </h2>
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
 
           {/* Link buttons */}
-          <div className="w-full flex flex-col gap-5">
+          <div className="w-full flex flex-col gap-6">
             {links.map((link, index) => (
               <a
                 key={index}
