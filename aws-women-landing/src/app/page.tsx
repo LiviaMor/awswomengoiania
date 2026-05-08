@@ -36,7 +36,7 @@ export default function Home() {
           {/* Logo */}
           <div className="mb-8">
             <Image
-              src="/aws-new.png"
+              src="/aws15.png"
               alt="AWS Women User Group Goiânia"
               width={320}
               height={320}
@@ -60,6 +60,27 @@ export default function Home() {
             <br />
             <span className="text-gray-300 font-medium">Vem crescer com a gente!</span>
           </p>
+
+          {/* Próximo Evento */}
+          <div className="w-full mb-12">
+            <h2 className="text-sm font-bold text-gray-300 uppercase tracking-widest text-center mb-4">
+              Próximo Evento
+            </h2>
+            <a
+              href="https://www.meetup.com/aws-women-user-group-goiania/events/314560526/?eventOrigin=group_upcoming_events"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-2xl overflow-hidden border border-white/10 hover:border-[#ff9900]/40 transition-all hover:shadow-[0_0_30px_rgba(255,153,0,0.1)] hover:-translate-y-1"
+            >
+              <Image
+                src="/evento1.png"
+                alt="Zero to Hero: Decolando na Nuvem com Kiro CLI — Sábado, 09 de Maio, 09:00 BRT — Evento Online"
+                width={800}
+                height={420}
+                className="w-full h-auto"
+              />
+            </a>
+          </div>
 
           {/* Link buttons */}
           <div className="w-full flex flex-col gap-5">
