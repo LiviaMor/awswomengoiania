@@ -71,14 +71,14 @@ export default function Home() {
               </h2>
             </div>
             <a
-              href="https://www.meetup.com/aws-women-user-group-goiania/events/314560526/?eventOrigin=group_upcoming_events"
+              href="https://www.meetup.com/aws-women-user-group-goiania/events/314700199/?eventOrigin=your_events&utm_medium=referral&utm_campaign=event_card_savedevents_share_modal&utm_source=link&utm_version=v2&member_id=476501116"
               target="_blank"
               rel="noopener noreferrer"
               className="event-card block rounded-2xl overflow-hidden"
             >
               <Image
-                src="/evento1.png"
-                alt="Zero to Hero: Decolando na Nuvem com Kiro CLI — Sábado, 09 de Maio, 09:00 BRT — Evento Online"
+                src="/evento(2).png"
+                alt="Próximo evento AWS Women User Group Goiânia"
                 width={800}
                 height={420}
                 className="w-full h-auto"
@@ -86,7 +86,7 @@ export default function Home() {
             </a>
             <p className="text-center mt-3">
               <a
-                href="https://www.meetup.com/aws-women-user-group-goiania/events/314560526/?eventOrigin=group_upcoming_events"
+                href="https://www.meetup.com/aws-women-user-group-goiania/events/314700199/?eventOrigin=your_events&utm_medium=referral&utm_campaign=event_card_savedevents_share_modal&utm_source=link&utm_version=v2&member_id=476501116"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#ff9900] text-xs font-semibold hover:underline"
