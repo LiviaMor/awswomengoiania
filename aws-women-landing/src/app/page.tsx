@@ -77,7 +77,7 @@ export default function Home() {
               className="event-card block rounded-2xl overflow-hidden"
             >
               <Image
-                src="/evento(2).png"
+                src="/evento2.png"
                 alt="Próximo evento AWS Women User Group Goiânia"
                 width={800}
                 height={420}
