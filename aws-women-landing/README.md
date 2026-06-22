@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AWS Women User Group Goiânia ☁️👩‍💻
 
-## Getting Started
+Comunidade de mulheres em Goiânia focada em **Amazon Web Services (AWS)** — estudos, carreira, certificações e networking.
 
-First, run the development server:
+## Sobre a comunidade
+
+O **AWS Women User Group Goiânia** é um grupo comunitário que reúne mulheres interessadas em cloud computing e no ecossistema AWS. Nosso objetivo é criar um espaço acolhedor para troca de conhecimento, apoio mútuo e crescimento profissional na área de tecnologia.
+
+### O que fazemos
+
+- **Meetups** — Encontros presenciais e online com palestras, workshops e painéis
+- **Grupos de estudo** — Preparação coletiva para certificações AWS
+- **Networking** — Conexões profissionais e oportunidades de carreira
+- **Mentoria** — Apoio de profissionais experientes para quem está começando
+
+### Nossos números
+
+| Métrica | Valor |
+|---------|-------|
+| Membras ativas | 200+ |
+| Eventos realizados | 15+ |
+| Certificações conquistadas | 50+ |
+| Anos de comunidade | 2+ |
+
+## Participe
+
+| Canal | Link |
+|-------|------|
+| Meetup | [AWS Women User Group Goiânia](https://www.meetup.com/aws-women-user-group-goiania/) |
+| LinkedIn | [Grupo no LinkedIn](https://www.linkedin.com/groups/18863023/) |
+| Instagram | [@awswomengoiania](https://www.instagram.com/awswomengoiania) |
+| WhatsApp | [Grupo de estudos](https://chat.whatsapp.com/GKdAMmwNFuP4imsNRTrFra) |
+
+## Sobre este projeto
+
+Este repositório contém o site da comunidade — uma landing page estilo **linktree** que centraliza os links e informações do grupo.
+
+### Tech stack
+
+- [Next.js](https://nextjs.org) 16 (App Router)
+- [React](https://react.dev) 19
+- [Tailwind CSS](https://tailwindcss.com) 4
+- [TypeScript](https://www.typescriptlang.org) 5
+
+### Rodando localmente
 
 ```bash
+# Instalar dependências
+npm install
+
+# Servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000) para visualizar.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build de produção
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Contribuindo
 
-To learn more about Next.js, take a look at the following resources:
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licença
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Consulte o arquivo [LICENSE](../LICENSE) para detalhes.
