@@ -38,29 +38,25 @@ export default function Home() {
           {/* Logo */}
           <div className="mb-6 sm:mb-8">
             <Image
-              src="/aws9.png"
+              src="/awswomengoiania.png"
               alt="AWS Women User Group Goiânia"
-              width={280}
-              height={280}
-              className="w-[160px] sm:w-[200px] md:w-[240px] h-auto drop-shadow-[0_0_40px_rgba(255,153,0,0.08)]"
+              width={400}
+              height={400}
+              className="w-[240px] sm:w-[300px] md:w-[360px] h-auto drop-shadow-[0_0_40px_rgba(255,153,0,0.08)]"
               priority
             />
           </div>
 
           {/* Tagline */}
-          <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-2 tracking-wide leading-relaxed">
-            <span className="text-[#ff9900]">Conexão</span>
-            <span className="text-gray-600 mx-1.5 sm:mx-2">·</span>
-            <span className="text-[#a855f7]">Cloud</span>
-            <span className="text-gray-600 mx-1.5 sm:mx-2">·</span>
-            <span className="text-[#ec4899]">Comunidade</span>
+          <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-2 tracking-wide leading-relaxed text-white">
+            Conexão <span className="text-[#ff9900]">·</span> Cloud <span className="text-[#ff9900]">·</span> Comunidade
           </h1>
 
           {/* Description */}
           <p className="text-gray-400 text-xs sm:text-sm text-center mb-8 sm:mb-10 leading-relaxed max-w-[300px]">
             Estudos AWS, carreira e certificações.
             <br />
-            <span className="text-gray-200 font-semibold">Vem crescer com a gente!</span>
+            <span className="text-white/90 font-medium">Vem crescer com a gente!</span>
           </p>
 
           {/* Próximo Evento */}

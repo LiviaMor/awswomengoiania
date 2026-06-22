@@ -51,7 +51,7 @@ body {
 .aurora-bg::after {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(130, 80, 223, 0.12), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 153, 0, 0.08), transparent 70%);
   bottom: -5%;
   right: -10%;
   animation-delay: 3s;
