@@ -15,6 +15,11 @@ body {
   color: #ffffff;
   font-family: var(--font-open-sans), "Open Sans", sans-serif;
   overflow-x: hidden;
+  /* Safe area para dispositivos com notch */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
 /* Animated aurora background */

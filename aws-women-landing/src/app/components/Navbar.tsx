@@ -31,7 +31,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-3 shrink-0">
           <Image
-            src="/3.png"
+            src="/aws8.png"
             alt="AWS Women Goiânia"
             width={36}
             height={36}
